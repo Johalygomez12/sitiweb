@@ -1,0 +1,152 @@
+/* Selector universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Selector de agrupación */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(fondo\ 1.jpg); /* Cambia 'imagen_fondo_pagina.jpg' por tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Selector de clase */
+.azul {
+    background-color: #3498db; /* Azul */
+    color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Selector de ID */
+#cabecera {
+    background-color: #f1c40f; /* Amarillo */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.busqueda-contenedor {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.busqueda-contenedor input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.busqueda-contenedor button.boton-busqueda {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(icon\ de\ busqueda.jpg); /* Reemplaza con la ruta correcta de tu icono de búsqueda */
+    background-size: cover;
+    border: none;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.imagen-encima {
+    text-align: center;
+    margin-top: 50px; /* Ajusta este valor según sea necesario */
+    position: relative;
+}
+
+/* Estilo de tipo cover pero que no abarque todo */
+.imagen-cover {
+    width: 95%;
+    max-width: 100%;
+    height: 50vh; /* La mitad de la altura de la pantalla */
+    object-fit: cover;
+}
+
+
+/* Resto de los estilos */
+.logo img {
+    max-width: 23%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+section.destacados {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos para los productos */
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 48%; /* Para que estén uno al lado del otro */
+    text-align: center;
+    background-color: #ecf0f1; /* Color de fondo más claro */
+    border-radius: 15px; /* Bordes más circulares */
+    margin-bottom: 20px;
+    position: relative; /* Añadido para posicionar el botón */
+}
+
+.producto img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón "Comprar" */
+.comprar {
+    background-color: #ffcc00; /* Verde */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#producto1 {
+    background-color: rgba(255, 214, 67, 0.372);
+    color: #fff;
+}
+
+#producto2 {
+    background-color: #ffd74463;
+    color: #fff;
+}
+
+.destacados .producto {
+    border-color: #3498db;
+}
